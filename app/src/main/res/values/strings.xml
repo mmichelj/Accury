@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Accury</string>
+    <string name="app_logo">CDMIT</string>
+    <string name="text_hola"><b>¡Hola!</b></string>
+    <string name="text_dispositivo">Selecciona un dispositivo para conectarte.</string>
+    <string name="text_dispencontrado">Dispositivo 1</string>
+    <string name="text_nodisp">No se han encontrado dispositivos.\n¿Tu dispositivo está encendido?</string>
+    <string name="icon_alert"></string>
+    <string name="txt_buscar">Buscar dispositivos</string>
+    <string name="txt_conexion"><b>Estableciendo conexión...</b></string>
+    <string name="txt_conectado">Dispositivo conectado</string>
+    <string name="txt_saltar">Comenzar</string>
+    <string name="txt_instrucciones"><b>Instrucciones</b></string>
+    <string name="txt_instrucciones_presionaestira">Presiona los botones que se indican, sin soltar los botones alarga o acorta el dispositivo hasta descubrir el color que se indique en hasta escuchar una campana y repite el ejercicio.</string>
+    <string name="txt_instrucciones_botones">Presiona los botones que se te indique hasta escuchar la campana.</string>
+    <string name="txt_instrucciones_presionagira">Presiona los botones que se te indiquen sin soltar la linea los botones presionados de una mano con los de la otra creando una linea imaginaria hasta escuchar la campana. Despues gira hasta la marca de home y espera la siguiente instrucción repitiendo el ejercicio.</string>
+|   <string name="txt_replay">¿Quieres jugar de nuevo?</string>
+    <string name="txt_yes">Repetir</string>
+    <string name="txt_no">Regresar al menu</string>
+    <!-- JUEGO UNO -->
+    <string name="startGameOne">{"juego":1,"comando":"INICIAR"}</string>
+    <string name="gameOneIni">{"juego": 1, "aciertos": 0, "estado": "INICIADO"}</string>
+    <string name="gameOneAudioOk">{"juego":1,"estado":"AUDIO_OK"}</string>
+
+    <!-- JUEGO DOS -->
+    <string name="startGameTwo">{"juego":2,"comando":"INICIAR"}</string>
+    <string name="gameTwoAudioOk">{"juego":2,"estado":"AUDIO_OK"}</string>
+
+    <!-- JUEGO TRES -->
+    <string name="startGameThree">{"juego":3,"comando":"INICIAR"}</string>
+    <string name="gameThreeAudioOk">{"juego":3,"estado":"AUDIO_OK"}</string>
+
+
+</resources>

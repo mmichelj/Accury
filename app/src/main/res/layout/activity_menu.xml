@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+
+    <ImageView
+        android:id="@+id/imgNumero"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:srcCompat="@drawable/circulosss_1" />
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="100dp">
+
+
+        <ImageView
+            android:id="@+id/imgEscoge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/escoge" />
+
+
+        <ImageButton
+            android:id="@+id/btnBotones"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            app:srcCompat="@drawable/linea_1"
+            android:background="@color/colorTransparent"
+            android:layout_marginTop="50dp"
+            android:onClick="onClickBotones"
+        />
+
+        <ImageButton
+            android:id="@+id/btnPresionaestira"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            app:srcCompat="@drawable/linea_2"
+            android:background="@color/colorTransparent"
+            android:layout_marginTop="30dp"
+            android:onClick="onClickEstira"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPresionagira"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            app:srcCompat="@drawable/linea_3"
+            android:background="@color/colorTransparent"
+            android:onClick="onClickGira"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutIns1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imgTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/botonestitulo" />
+
+        <LinearLayout
+            android:id="@+id/layoutInstrucciones"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/sliderbg"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgInstrucciones"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/instrucciones" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtInstrucciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                style="@style/TextMenu"
+                android:drawablePadding="80dp"
+                android:drawableBottom="@drawable/campana"
+                android:text="@string/txt_instrucciones_botones"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnComenzar"
+            style="@style/TextMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/selector_btnsaltar_button_normal"
+            android:text="@string/txt_saltar"
+            android:onClick="onClickComenzar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSalir"
+        style="@style/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="135dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/cdmitlogodark"
+        android:drawableLeft="@drawable/cdmitlogodark"
+        android:focusable="true"
+        android:gravity="end|center_vertical"
+        android:onClick="onClickSalir"
+        android:padding="10dp"
+        android:text="@string/icon_alert"
+        android:textColor="@color/colorRed"
+        android:textSize="50sp" />
+
+</RelativeLayout>

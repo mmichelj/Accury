@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor"
+    tools:context=".ConexionActivity">
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/fondo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgCDMIT"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_logo"
+            app:srcCompat="@drawable/logocdmit" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/textColor"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtProgress"
+            style="@style/TextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/txt_conexion"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/layoutComenzar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtConectado"
+                android:background="@color/textColor"
+                style="@style/TextGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:elevation="3dp"
+                android:text="@string/txt_conectado"
+                android:drawableRight="@drawable/checkmark"
+                android:drawableEnd="@drawable/checkmark"
+                android:paddingRight="40dp"
+                android:paddingEnd="40dp"
+                android:paddingLeft="40dp"
+                android:paddingStart="40dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnComenzar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/botoncorazon"
+                android:background="@color/colorTransparent"
+                android:layout_marginTop="230dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

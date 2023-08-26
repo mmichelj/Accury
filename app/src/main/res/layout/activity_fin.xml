@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinActivity">
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/fondo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        >
+    <ImageView
+        android:id="@+id/imgCDMIT"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_logo"
+        app:srcCompat="@drawable/logocdmit" />
+
+        <LinearLayout
+            android:id="@+id/layoutError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="80dp"
+                android:contentDescription="@string/app_logo"
+                app:srcCompat="@drawable/error" />
+
+            <ImageView
+                android:id="@+id/imgFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+
+                android:contentDescription="@string/app_logo"
+                app:srcCompat="@drawable/findjuego" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutReplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtReplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/bunya"
+                style="@style/TextMain"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/replaybg"
+                android:text="@string/txt_replay" />
+
+            <ImageButton
+                android:id="@+id/btnRepetir"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/txt_yes"
+                android:background="@color/colorTransparent"
+                app:srcCompat="@drawable/imgyes" />
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:contentDescription="@string/txt_no"
+                app:srcCompat="@drawable/imgno" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

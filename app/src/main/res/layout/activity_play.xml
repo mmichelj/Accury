@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/fondo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/imgCDMIT"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_logo"
+            app:srcCompat="@drawable/logocdmit" />
+
+        <LinearLayout
+            android:id="@+id/layoutCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/imgJuegaen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/juega_en"
+                android:contentDescription="@string/app_name"
+                />
+            <TextView
+                android:id="@+id/txtCountdown"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/countdown"
+                android:text="5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/TextMain"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layoutPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/layoutAciertos"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/fondoaciertos"
+            android:padding="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgAciertos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/aciertos"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/txtAciertos"
+                style="@style/TextMain"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/aciertosbg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
